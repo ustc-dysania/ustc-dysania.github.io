@@ -37,7 +37,7 @@ author:
   type      : # "person" (default), "organization"
   name      : Cong Zhou
   url       :
-  avatar    : # path or url of avatar image (square)
+  avatar    : assets/favicon.png # path or url of avatar image (square)
   bio       : I am a senior undergraduate major in astrophysics in University of Science and Technology of China.
   email     : dysania@mail.ustc.edu.cn
   facebook  : # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
@@ -118,7 +118,7 @@ sharing:
 ## => Comments
 ##############################
 comments:
-  provider: false # false (default), "disqus", "gitalk", "valine", "custom"
+  provider: gitalk # false (default), "disqus", "gitalk", "valine", "custom"
 
   ## Disqus
   disqus:
@@ -127,12 +127,12 @@ comments:
   ## Gitalk
   # please refer to https://github.com/gitalk/gitalk for more info.
   gitalk:
-    clientID    : # GitHub Application Client ID
-    clientSecret: # GitHub Application Client Secret
-    repository  : # GitHub repo
-    owner       : # GitHub repo owner
+    clientID    : d98bb19afbcecf742466 # GitHub Application Client ID
+    clientSecret: 2c6aeac9085077330a2490352cbed7ea8e762c8a # GitHub Application Client Secret
+    repository  : usts-dysania.github.io # GitHub repo
+    owner       : ustc-dysania # GitHub repo owner
     admin: # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
-      # - your GitHub Id
+       - ustc-dysania
 
   ## Valine
   # please refer to https://valine.js.org/en/ for more info.
@@ -169,12 +169,12 @@ search:
 ## => Analytics
 ##############################
 analytics:
-  provider: false # false (default), "google", "custom"
+  provider: google # false (default), "google", "custom"
 
   ## Google Analytics
   google:
-    tracking_id : # Google Analytics id for the site
-    anonymize_ip: false # Anonymize IP tracking for Analytics
+    tracking_id : UA-151201127-1 # Google Analytics id for the site
+    anonymize_ip: true # Anonymize IP tracking for Analytics
 
 
 ## => Build
